@@ -1,0 +1,79 @@
+.die {
+    display: grid;
+    flex-direction: column;
+
+    &.is--rolling {
+        opacity: 0.5;
+    }
+    &.is--locked {
+        opacity: 0.7;
+    }
+
+    .face {
+        position: relative;
+        border: solid 3px #aaa;
+        background: #cacaca;
+        border-radius: 3px;
+        width: 100px;
+        height: 100px;
+
+        .dot {
+            position: absolute;
+            background: #f97583;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            transform: translate(-8px, -8px);
+        }
+    }
+
+    &.is--even {
+        .dot-1 {
+            top: 25%;
+            left: 25%;
+        }
+        .dot-2 {
+            top: 75%;
+            left: 75%;
+        }
+        .dot-3 {
+            top: 75%;
+            left: 25%;
+        }
+        .dot-4 {
+            top: 25%;
+            left: 75%;
+        }
+        .dot-5 {
+            top: 50%;
+            left: 75%;
+        }
+
+        .dot-6 {
+            top: 50%;
+            left: 25%;
+        }
+    }
+    &.is--odd {
+        .dot-1 {
+            top: 50%;
+            left: 50%;
+        }
+        .dot-2 {
+            top: 25%;
+            left: 25%;
+        }
+        .dot-3 {
+            top: 75%;
+            left: 75%;
+        }
+        .dot-4 {
+            top: 75%;
+            left: 25%;
+        }
+        .dot-5 {
+            top: 25%;
+            left: 75%;
+        }
+    }
+}

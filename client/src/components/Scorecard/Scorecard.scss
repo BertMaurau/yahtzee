@@ -1,0 +1,14 @@
+.scorecard {
+    .table {
+        td,
+        th {
+            text-align: center;
+            white-space: nowrap;
+
+            &:first-child {
+                text-align: left;
+                padding-right: 4rem;
+            }
+        }
+    }
+}
